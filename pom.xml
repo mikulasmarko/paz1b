@@ -12,7 +12,8 @@
 		<module>cviko01</module>
 		<module>domace01</module>
         <module>cviko02.1</module>
-    </modules>
+		<module>domace02</module>
+	</modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
