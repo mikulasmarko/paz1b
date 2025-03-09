@@ -128,7 +128,7 @@ public class SpajanyZoznam {
         System.out.println();
 
         zoznam = new SpajanyZoznam();
-        vlozNahodneUsporiadaneHodnoty(zoznam, 1);
+        vlozNahodneUsporiadaneHodnoty(zoznam, 20);
         System.out.println("Pred: " + zoznam);
         System.out.println("vlozUsporiadane(...)");
         zoznam.vlozUsporiadane(10);
