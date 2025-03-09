@@ -13,7 +13,8 @@
 		<module>domace01</module>
         <module>cviko02.1</module>
 		<module>domace02</module>
-	</modules>
+        <module>domace03</module>
+    </modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
