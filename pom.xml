@@ -14,6 +14,7 @@
         <module>cviko02.1</module>
 		<module>domace02</module>
         <module>domace03</module>
+        <module>domace04</module>
     </modules>
 
 	<properties>
