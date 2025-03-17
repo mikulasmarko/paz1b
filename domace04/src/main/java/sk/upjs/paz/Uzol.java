@@ -36,7 +36,7 @@ public class Uzol {
         return sb.toString();
     }
 
-    public int spocitajDeti(Uzol uzol) {
+    private int spocitajDeti(Uzol uzol) {
         int pocet = 0;
         //ak ma uzol co dostanem na vstupe prave dieta pripocitam pocet, a pytam sa na pocet deti daneho uzla
         if (uzol.pravy != null) {
@@ -101,6 +101,7 @@ public class Uzol {
          */
 
     }
+    
 
 
     public static Uzol vytvorBVS(Set<Integer> hodnoty) {

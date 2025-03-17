@@ -27,7 +27,6 @@ public class Osoba {
         }
         //vytvorim si pocitadlo ktore bdue pocitat deti
         int pocetDeti = 0;
-
         // prechadzam deti osoby a pocitam kolko ma dana generacia potomkov
         //lustrujem potomkov kym nedojdem na taku generaciu ktora ma zaujima
         // tj ked dostanem na vstupe 7 tak sa poposuvam na take miesto kym nebude gen 1

@@ -15,6 +15,7 @@
 		<module>domace02</module>
         <module>domace03</module>
         <module>domace04</module>
+        <module>domace04.05</module>
     </modules>
 
 	<properties>
