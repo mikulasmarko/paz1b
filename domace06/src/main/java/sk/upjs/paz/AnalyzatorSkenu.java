@@ -111,10 +111,6 @@ public class AnalyzatorSkenu {
         zabiPixeliBunky(xko + 1, yko);
         zabiPixeliBunky(xko, yko - 1);
         zabiPixeliBunky(xko, yko + 1);
-        zabiPixeliBunky(xko - 1, yko-1);
-        zabiPixeliBunky(xko + 1, yko+1);
-        zabiPixeliBunky(xko+1, yko - 1);
-        zabiPixeliBunky(xko-1, yko + 1);
 
     }
 
