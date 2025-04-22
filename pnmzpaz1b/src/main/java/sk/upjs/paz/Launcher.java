@@ -9,7 +9,7 @@ public class Launcher {
 		sz.pridajNaZaciatok(0);
 		sz.pridajNaZaciatok(0);
 		sz.pridajNaZaciatok(1);
-//		sz.pridajNaZaciatok(1);
+		sz.pridajNaZaciatok(1);
 //		sz.pridajNaZaciatok(1);
 //		sz.pridajNaZaciatok(2);
 //		sz.pridajNaZaciatok(4);
