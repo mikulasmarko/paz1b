@@ -40,6 +40,7 @@ public class Poklad {
         String out = "";
         int xKamSaPosunie = 0;
         int yKamSaPosunie = 0;
+        System.out.println(Arrays.toString(poleCisel));
         for (int i = 0; i < poleCisel.length; i++) {
             if (poleCisel[i] == 0) {
                 out += "N";
@@ -66,7 +67,7 @@ public class Poklad {
 
     public static void main(String[] args) {
         Poklad p = new Poklad();
-        System.out.println(p.cesty(8, 1, 7).toString());
+        System.out.println(p.cesty(10, 1, 3).toString());
     }
 }
 

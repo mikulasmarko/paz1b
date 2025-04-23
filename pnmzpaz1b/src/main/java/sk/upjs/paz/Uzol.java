@@ -48,12 +48,13 @@ public class Uzol {
     public int jesen() {
         int pocetOdpadnutych = 0;
         List<Uzol> opadnuteListy = new ArrayList<>();
-        for (Uzol dieta : deti) {
-            if (dieta.deti.isEmpty()) {
-                pocetOdpadnutych ++;
-                opadnuteListy.add(dieta);
+
+        for (Uzol oGeneraciuNizsie : this.deti) {
+            if (oGeneraciuNizsie.deti.isEmpty()) {
+                pocetOdpadnutych++;
+                opadnuteListy.add(oGeneraciuNizsie);
             } else {
-                pocetOdpadnutych += dieta.jesen();
+                pocetOdpadnutych += oGeneraciuNizsie.jesen();
             }
         }
         deti.removeAll(opadnuteListy);
