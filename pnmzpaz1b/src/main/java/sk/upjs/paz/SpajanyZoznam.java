@@ -67,8 +67,7 @@ public class SpajanyZoznam {
     public void odstranFake() {
         if (prvy == null) {
             return;
-        }
-
+        }       
         Uzol aktualny = prvy;
 
         if (prvy.hodnota == 0) {
