@@ -28,22 +28,22 @@ public class Osoba2 {
     }
 
     public int pocetSekretarok() {
-        int pocet = 0;
-        boolean mamTamNiekohoSPOdriadenymi = false;
-        for (Osoba2 osoba : deti) {
+        int counter = 0;
+        boolean gotSomebodyUnderHim = false;
+        for (Osoba2 person : deti) {
 
-            for (Osoba2 osoba2 : deti) {
-                if (!osoba2.deti.isEmpty()) {
-                    mamTamNiekohoSPOdriadenymi = true;
+            for (Osoba2 persona : deti) {
+                if (!persona.deti.isEmpty()) {
+                    gotSomebodyUnderHim = true;
                 }
             }
-            if (deti.size() >= 2 && mamTamNiekohoSPOdriadenymi)
-                if (osoba.deti.isEmpty()) {
-                    pocet++;
+            if (deti.size() >= 2 && gotSomebodyUnderHim)
+                if (person.deti.isEmpty()) {
+                    counter++;
                 }
-            pocet = pocet + osoba.pocetSekretarok();
+            counter = counter + person.pocetSekretarok();
         }
-        return pocet;
+        return counter;
     }
 
     public static void main(String[] args) {
