@@ -39,12 +39,9 @@ public class SpajanyZoznam {
 
         Uzol pomocny = new Uzol();
         Uzol pomocnyAktualny = pomocny;
-
         if (aktualny == null)
             return;
-
         while (aktualny != null) {
-
             counter++;
             hodnota += aktualny.hodnota;
             aktualny = aktualny.dalsi;
@@ -68,35 +65,31 @@ public class SpajanyZoznam {
 
 
     public void odstranFake() {
-        Uzol aktualny = prvy;
-        Uzol predosly = aktualny;
+        if (prvy == null) {
+            return;
+        }
 
-        if (aktualny.hodnota == 0) {
+        Uzol aktualny = prvy;
+
+        if (prvy.hodnota == 0) {
             prvy = prvy.dalsi;
             return;
         }
 
-        int hodnotka = prvy.hodnota;
-        while (hodnotka == 1) {
-            aktualny = aktualny.dalsi;
-            hodnotka = aktualny.hodnota;
-        }
-        prvy = aktualny.dalsi;
-
+        int posun = aktualny.hodnota;
         while (aktualny.dalsi != null) {
-            int skoky = (int) aktualny.hodnota;
-            if (skoky == 0) {
-                predosly.dalsi = aktualny.dalsi;
-                return;
-            }
-            for (int i = 0; i < skoky; i++) {
-                predosly = aktualny;
+            for (int i = 0; i < posun - 1; i++) {
                 aktualny = aktualny.dalsi;
             }
-            if (aktualny != null) {
-                predosly.dalsi = aktualny.dalsi;
+            if (aktualny.dalsi.hodnota == 0) {
+                aktualny.dalsi = aktualny.dalsi.dalsi;
+                break;
+            } else {
+                posun = aktualny.dalsi.hodnota;
+                aktualny.dalsi = aktualny.dalsi.dalsi;
             }
         }
+        prvy = prvy.dalsi;
     }
 
 
