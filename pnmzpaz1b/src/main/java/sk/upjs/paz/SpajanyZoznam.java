@@ -63,7 +63,6 @@ public class SpajanyZoznam {
         prvy = pomocny;
     }
 
-
     public void odstranFake() {
         if (prvy == null) {
             return;
@@ -90,6 +89,4 @@ public class SpajanyZoznam {
         }
         prvy = prvy.dalsi;
     }
-
-
 }
