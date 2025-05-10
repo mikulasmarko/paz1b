@@ -74,10 +74,12 @@ public class source {
             }
         }
         return max;
+        //vratim pre kazdy riadok hodnotu co vypocitalo a som stastny a spokojny
     }
 
     public static void main(String[] args) {
         source s = new source();
         s.vyriesUlohu();
+        //spustim a som stastny a spokojny :)
     }
 }
