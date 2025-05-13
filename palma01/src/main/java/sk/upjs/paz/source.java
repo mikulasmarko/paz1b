@@ -81,5 +81,6 @@ public class source {
         source s = new source();
         s.vyriesUlohu();
         //spustim a som stastny a spokojny :)
+        //pisem kod v prehliadaci
     }
 }
