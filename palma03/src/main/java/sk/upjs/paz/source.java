@@ -42,6 +42,7 @@ public class source {
         return finalCislo;
     }
 
+    //klasicky backtrack generujem 0 a jednotky a na zaklade toho vyhodnocujem 
     private void generuj(int idx) {
         if (idx == generovane.length) {
             vyries();
