@@ -1,16 +1,17 @@
 package sk.upjs.paz;
 
 public class DovolenkaNaHavaju {
-    int[] p;
-    int kolkoDniMore;
-    int kolkoDniHory;
-    int maxHory;
-    int maxMore;
-    int kombinacie = 0;
+    private int[] p;
+    private int kolkoDniMore;
+    private int kolkoDniHory;
+    private int maxHory;
+    private int maxMore;
+    private int kombinacie = 0;
+
+    private int counterPreruseni=0;
 
 
-    private int predosle;
-    private int counter;
+
 
 
     public DovolenkaNaHavaju(int M, int H, int m, int h) {
@@ -19,8 +20,12 @@ public class DovolenkaNaHavaju {
         maxHory = h;
         maxMore = m;
         p = new int[kolkoDniMore + kolkoDniHory];
-        generuj(0);
+        generuj();
         System.out.println(kombinacie);
+    }
+
+    public void generuj(){
+        generuj(0);
     }
 
     private void generuj(int odIdx) {
@@ -31,6 +36,9 @@ public class DovolenkaNaHavaju {
         }
 
         for (int i = 0; i <= 1; i++) {
+            counterPreruseni++;
+            System.out.println("vyhodnotil som zlu kombinaciu, prerusujem vetvu generovania s cislom: "+counterPreruseni);
+
 
             p[odIdx] = i;
             if (ciastocneSpracuj(odIdx)) {
@@ -88,7 +96,7 @@ public class DovolenkaNaHavaju {
     }
 
     public static void main(String[] args) {
-        DovolenkaNaHavaju d = new DovolenkaNaHavaju(2, 2, 1, 1);
+        DovolenkaNaHavaju d = new DovolenkaNaHavaju(4, 4, 2, 2);
         System.out.println(d);
     }
 }
