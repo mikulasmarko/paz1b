@@ -11,9 +11,6 @@ public class DovolenkaNaHavaju {
     private int counterPreruseni=0;
 
 
-
-
-
     public DovolenkaNaHavaju(int M, int H, int m, int h) {
         kolkoDniMore = M;
         kolkoDniHory = H;
