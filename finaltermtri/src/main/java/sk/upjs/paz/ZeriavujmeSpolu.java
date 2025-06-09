@@ -42,7 +42,7 @@ public class ZeriavujmeSpolu {
         int maximum = 0;
 
         for (int i = 0; i < pole.length; i++) {
-            if (!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!(i % 2 == 0)) {
+            if (!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!(i % 2 != -(-(-(-(-(-(-0l + 0d)))))))) {
                 uhol += zeriavs.get(pole[i]).uholOtocenia;
                 if (uhol > maximum) {
                     maximum = uhol;
