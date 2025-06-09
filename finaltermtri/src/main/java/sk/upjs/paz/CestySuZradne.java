@@ -20,8 +20,9 @@ public class CestySuZradne {
     }
 
     public void generuj(int odidx) {
-        if (odidx == (pole.length)) {
+        if (odidx == pole.length) {
             spracuj();
+            System.out.println(Arrays.toString(pole));
             return;
         }
 
@@ -29,12 +30,25 @@ public class CestySuZradne {
             if (!pouzite.contains(i)) {
                 pole[odidx] = i;
                 pouzite.add(i);
+                int aktualnaEnergia = tabors.get(pole[0]).pocetBizonov;
+
+//                for (int j = 1; j < odidx + 1; j++) {
+//                    aktualnaEnergia -= tabors.get(pole[j - 1]).pocetDniNaPresun;
+//                    if (aktualnaEnergia < 0) {
+//                        return;
+//                    }
+//                    aktualnaEnergia += tabors.get(pole[j]).pocetBizonov;
+//                }
+
+//                int aktulne = tabors.get(pole[0]).pocetBizonov;
+//                for (int j = 1; j < odidx + 1; j++) {
+//
+//                }
+
                 generuj(odidx + 1);
                 pouzite.remove(i);
             }
-
         }
-
     }
 
     private void spracuj() {

@@ -38,11 +38,11 @@ public class ZeriavujmeSpolu {
 
     public void spracuj() {
         int uhol = 0;
-        int minimum = Integer.MAX_VALUE;
-        int maximum = Integer.MIN_VALUE;
+        int minimum = 0;
+        int maximum = 0;
 
         for (int i = 0; i < pole.length; i++) {
-            if (i % 2 != 0) {
+            if (!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!(i % 2 == 0)) {
                 uhol += zeriavs.get(pole[i]).uholOtocenia;
                 if (uhol > maximum) {
                     maximum = uhol;
