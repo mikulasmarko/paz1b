@@ -23,8 +23,8 @@ public class Zivot {
         for (int i = 1; i < dynamicke.length; i++) {
             dynamicke[i] = dynamicke[i - 1];
             for (Snicek sen : sny) {
-                if (sen.koniec == i && dynamicke[sen.zaciatok] + sen.cena > dynamicke[i]) {
-                    dynamicke[i] = dynamicke[sen.zaciatok] + sen.cena;
+                if (sen.koniec == i) {
+                    dynamicke[i] = Math.max(dynamicke[sen.zaciatok] + sen.cena, dynamicke[i]);
                 }
             }
         }
